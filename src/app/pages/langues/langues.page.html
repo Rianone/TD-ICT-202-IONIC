@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <a class="btn" href="/informations">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Back to home
+    </a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="title">
+    <h1 class="ion-padding">Langues</h1>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label>name</ion-label>
+      <ion-label>level</ion-label>
+      <ion-button color="danger">&Cross;</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-accordion-group>
+    <ion-accordion value="names" toggle-icon="arrow-down-circle">
+      <ion-item slot="header">
+        <ion-label>Add Language</ion-label>
+      </ion-item>
+  
+      <ion-list slot="content">
+        <ion-item>
+          <ion-label position="floating">Enter name here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Enter level here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+        <ion-button expand="block">Add</ion-button>
+      </ion-list>
+    </ion-accordion>
+  </ion-accordion-group>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <a class="btn" href="/informations">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Back to home
+    </a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="title">
+    <h1 class="ion-padding">Print CV</h1>
+    <p>Choose your model here</p>
+  </div>
+
+<ion-list *ngFor="let image of images">
+      <ion-img [src]="image.src" (click)="print(image.text)"></ion-img>
+  <ion-item>
+    <ion-label>{{image.text}}</ion-label>
+  </ion-item>
+</ion-list>
+</ion-content>

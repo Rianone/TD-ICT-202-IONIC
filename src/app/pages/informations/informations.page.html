@@ -1,0 +1,143 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Informations</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Information</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-accordion-group>
+      <ion-accordion value="names" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Names</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+              Ex: Doe
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Enter new names here</ion-label>
+            <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          </ion-item>
+            <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Surnames" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Surnames</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            Ex: John
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Enter new surnames here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Date de naissance" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Date of birth</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            Ex: 20-12-2020
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Enter date here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Lieu de naissance" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Place of birth</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            Ex: Bafoussam 
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Enter place here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Contacts" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Contacts</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>693632253</ion-label>
+            <ion-button color="danger">&Cross;</ion-button>
+          </ion-item>
+        <ion-item>
+          <ion-label position="floating">Add contact here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Emails" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Emails</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>smrianone92@gmail.com</ion-label>
+            <ion-button color="danger">&Cross;</ion-button>
+          </ion-item>
+        <ion-item>
+          <ion-label position="floating">Add email here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+
+      <ion-accordion value="Comptes" toggle-icon="arrow-down-circle">
+        <ion-item slot="header">
+          <ion-label>Comptes</ion-label>
+        </ion-item>
+    
+        <ion-list slot="content">
+          <ion-item>
+            <ion-label>Linked in</ion-label>
+            <ion-button color="danger">&Cross;</ion-button>
+          </ion-item>
+        <ion-item>
+          <ion-label position="floating">Enter account url here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        </ion-item>
+          <ion-button expand="block">Save</ion-button>
+        </ion-list>
+      </ion-accordion>
+      
+    </ion-accordion-group>
+  </div>
+</ion-content>

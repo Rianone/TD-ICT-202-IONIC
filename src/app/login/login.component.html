@@ -1,0 +1,38 @@
+<ion-app>
+
+  
+  <ion-content class="ion-padding">
+    <div class="title">
+      <h1 class="ion-padding">SignUp</h1>
+    </div>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="floating">Enter your e-mail address</ion-label>
+      <ion-input  type="email" autocorrect="true" autofocus="true"></ion-input>
+    </ion-item>
+    
+    <ion-item class="ion-margin-bottom"> 
+      <ion-label position="floating" >Enter your password</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-button expand="block">Connexion</ion-button>
+    <div class="title">
+        <p>-- OR --</p>
+    </div>
+    <ion-button expand="block" fill="outline" href="/create">
+      Create account
+    </ion-button>
+    <!-- <ion-button expand="block" fill="outline" color="danger">
+      <ion-icon ios="trash-outline"></ion-icon>
+        Sign in with Google
+    </ion-button> -->
+
+    <ion-list>
+      <ion-item *ngFor="let user of users | async">
+        <ion-label>{{user.name }} {{ user.email }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-app>

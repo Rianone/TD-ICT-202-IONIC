@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <a class="btn" href="/informations">
+      <ion-icon slot="start" name="arrow-back"></ion-icon>
+        Back to home
+    </a>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="title">
+    <h1 class="ion-padding">Experience Proffesionelle</h1>
+  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Title</ion-label>
+      <ion-label>Company</ion-label>
+      <ion-label>Period</ion-label>
+      <ion-label>
+        <ion-item>Details</ion-item>
+      </ion-label>
+      <ion-button color="danger">&Cross;</ion-button>
+    </ion-item>
+  </ion-list>
+
+  <ion-accordion-group>
+  <ion-accordion value="Add" toggle-icon="arrow-down-circle">
+    <ion-item slot="header">
+      <ion-label>Add Experience</ion-label>
+    </ion-item>
+
+    <ion-list slot="content">
+      <ion-item>
+        <ion-label position="floating">Enter Title here</ion-label>
+        <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Enter Company here</ion-label>
+        <ion-input  type="text" autocorrect="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Enter Period here</ion-label>
+        <ion-input  type="text" autocorrect="true" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Enter Details here</ion-label>
+        <ion-input  type="text" autocorrect="true" ></ion-input>
+      </ion-item>
+      <ion-button expand="block">Add</ion-button>
+    </ion-list>
+  </ion-accordion>
+</ion-accordion-group>
+
+  
+
+</ion-content>
