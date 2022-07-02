@@ -1,0 +1,806 @@
+.mediaViewInfo {
+	--web-view-name: 06;
+	--web-view-id: n_6;
+	--web-scale-on-resize: true;
+	--web-scale-on-double-click: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: n_6;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#n_6 {
+	position: absolute;
+	width: 595px;
+	height: 842px;
+	background-color: rgba(221,214,198,1);
+	overflow: hidden;
+	--web-view-name: 06;
+	--web-view-id: n_6;
+	--web-scale-on-resize: true;
+	--web-scale-on-double-click: true;
+	--web-enable-deep-linking: true;
+}
+#Bg {
+	position: absolute;
+	width: 633px;
+	height: 578px;
+	left: -13px;
+	top: -173px;
+	overflow: visible;
+}
+#Oval {
+	fill: transparent;
+	stroke: rgba(0,0,0,0.102);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 10;
+	shape-rendering: auto;
+}
+.Oval {
+	position: absolute;
+	overflow: visible;
+	width: 483px;
+	height: 483px;
+	left: 0px;
+	top: 0px;
+}
+#Oval_s {
+	fill: transparent;
+	stroke: rgba(0,0,0,0.102);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 10;
+	shape-rendering: auto;
+}
+.Oval_s {
+	position: absolute;
+	overflow: visible;
+	width: 354px;
+	height: 354px;
+	left: 280px;
+	top: 225px;
+}
+#Photo {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	left: 218px;
+	top: 76.252px;
+	overflow: visible;
+}
+#Rectangle {
+	position: absolute;
+	width: 160px;
+	height: 160px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Certifications {
+	position: absolute;
+	width: 337px;
+	height: 78px;
+	left: 218px;
+	top: 744.667px;
+	overflow: visible;
+}
+#PHP_Framework_certi {
+	left: 0px;
+	top: 34px;
+	position: absolute;
+	overflow: hidden;
+	width: 338px;
+	height: 44px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Certifications_x {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 98px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Education {
+	position: absolute;
+	width: 337px;
+	height: 56px;
+	left: 218px;
+	top: 653.667px;
+	overflow: visible;
+}
+#Bachelor_of_Science {
+	left: 0px;
+	top: 34px;
+	position: absolute;
+	overflow: hidden;
+	width: 338px;
+	height: 22px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Education_ {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 74px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Experience {
+	position: absolute;
+	width: 337px;
+	height: 191px;
+	left: 218px;
+	top: 420.403px;
+	overflow: visible;
+}
+#Luna_Web_Design {
+	left: 0px;
+	top: 34px;
+	position: absolute;
+	overflow: hidden;
+	width: 258px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Web_Developer_0920 {
+	opacity: 0.3;
+	left: 0px;
+	top: 52px;
+	position: absolute;
+	overflow: hidden;
+	width: 258px;
+	height: 10px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Cooperate_with_desig {
+	left: 11px;
+	top: 71px;
+	position: absolute;
+	overflow: hidden;
+	width: 327px;
+	height: 20px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Develop_project_conc {
+	left: 11px;
+	top: 101px;
+	position: absolute;
+	overflow: hidden;
+	width: 327px;
+	height: 10px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Work_with_senior_dev {
+	left: 11px;
+	top: 121px;
+	position: absolute;
+	overflow: hidden;
+	width: 327px;
+	height: 20px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Complete_detailed_pr {
+	left: 11px;
+	top: 151px;
+	position: absolute;
+	overflow: hidden;
+	width: 327px;
+	height: 20px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Carry_out_quality_as {
+	left: 11px;
+	top: 181px;
+	position: absolute;
+	overflow: hidden;
+	width: 327px;
+	height: 10px;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Text {
+	left: 1px;
+	top: 67px;
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: right;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Text_ba {
+	left: 1px;
+	top: 97px;
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: right;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Text_bb {
+	left: 1px;
+	top: 117px;
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: right;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Text_bc {
+	left: 1px;
+	top: 147px;
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: right;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Text_bd {
+	left: 1px;
+	top: 177px;
+	position: absolute;
+	overflow: visible;
+	width: 5px;
+	white-space: nowrap;
+	line-height: 12px;
+	margin-top: -1px;
+	text-align: right;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 10px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Experience_be {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 80px;
+	white-space: nowrap;
+	line-height: 19px;
+	margin-top: -1.5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Languages {
+	position: absolute;
+	width: 163px;
+	height: 83px;
+	left: 40px;
+	top: 739.667px;
+	overflow: visible;
+}
+#Languages_bg {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Spanish_Chinese_Germ {
+	left: 0px;
+	top: 23px;
+	position: absolute;
+	overflow: visible;
+	width: 164px;
+	height: 60px;
+	line-height: 20px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Rectangle_bi {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bi {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 37px;
+}
+#Rectangle_bj {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bj {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 57px;
+}
+#Rectangle_bk {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bk {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 77px;
+}
+#Rectangle_bl {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bl {
+	position: absolute;
+	overflow: visible;
+	width: 101px;
+	height: 1px;
+	left: 0px;
+	top: 37px;
+}
+#Rectangle_bm {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bm {
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	height: 1px;
+	left: 0px;
+	top: 57px;
+}
+#Rectangle_bn {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bn {
+	position: absolute;
+	overflow: visible;
+	width: 78px;
+	height: 1px;
+	left: 0px;
+	top: 77px;
+}
+#Programming {
+	position: absolute;
+	width: 163px;
+	height: 103px;
+	left: 40px;
+	top: 581.667px;
+	overflow: visible;
+}
+#Programming_bp {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#PHP_OOP_MySQL_CSS_C {
+	left: 0px;
+	top: 23px;
+	position: absolute;
+	overflow: visible;
+	width: 164px;
+	height: 80px;
+	line-height: 20px;
+	margin-top: -4.5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Rectangle_br {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_br {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 37px;
+}
+#Rectangle_bs {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bs {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 57px;
+}
+#Rectangle_bt {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bt {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 77px;
+}
+#Rectangle_bu {
+	fill: rgba(0,0,0,0.102);
+}
+.Rectangle_bu {
+	position: absolute;
+	overflow: visible;
+	width: 156px;
+	height: 1px;
+	left: 0px;
+	top: 97px;
+}
+#Rectangle_bv {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bv {
+	position: absolute;
+	overflow: visible;
+	width: 135px;
+	height: 1px;
+	left: 0px;
+	top: 37px;
+}
+#Rectangle_bw {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bw {
+	position: absolute;
+	overflow: visible;
+	width: 105px;
+	height: 1px;
+	left: 0px;
+	top: 57px;
+}
+#Rectangle_bx {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_bx {
+	position: absolute;
+	overflow: visible;
+	width: 75px;
+	height: 1px;
+	left: 0px;
+	top: 77px;
+}
+#Rectangle_by {
+	fill: rgba(0,0,0,1);
+}
+.Rectangle_by {
+	position: absolute;
+	overflow: visible;
+	width: 45px;
+	height: 1px;
+	left: 0px;
+	top: 97px;
+}
+#Skill_Highlights {
+	position: absolute;
+	width: 163px;
+	height: 99px;
+	left: 40px;
+	top: 423.402px;
+	overflow: visible;
+}
+#Skill_Highlights_b {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Project_management_S {
+	left: 0px;
+	top: 23px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 76px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Summary {
+	position: absolute;
+	width: 337px;
+	height: 96px;
+	left: 218px;
+	top: 286.119px;
+	overflow: visible;
+}
+#Senior_Web_Developer {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 338px;
+	height: 96px;
+	line-height: 16px;
+	margin-top: -2px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Contact {
+	position: absolute;
+	width: 163px;
+	height: 74px;
+	left: 40px;
+	top: 283.71px;
+	overflow: visible;
+}
+#n_77_Great_Portland_S {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 22px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#n_2010-1234-5678 {
+	left: 0px;
+	top: 37px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#jeansjeans-studioc {
+	left: 0px;
+	top: 63px;
+	position: absolute;
+	overflow: hidden;
+	width: 164px;
+	height: 11px;
+	line-height: 13px;
+	margin-top: -1px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 11px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#Name {
+	position: absolute;
+	width: 495px;
+	height: 219px;
+	left: 44px;
+	top: 39.572px;
+	overflow: visible;
+}
+#CHRISTOPHER {
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	overflow: visible;
+	width: 310px;
+	white-space: nowrap;
+	line-height: 58px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
+#MORGAN {
+	left: 292px;
+	top: 155px;
+	position: absolute;
+	overflow: visible;
+	width: 204px;
+	white-space: nowrap;
+	line-height: 58px;
+	margin-top: -5px;
+	text-align: left;
+	font-family: Didot LT Std;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	color: rgba(0,0,0,1);
+	letter-spacing: -0.16px;
+}
