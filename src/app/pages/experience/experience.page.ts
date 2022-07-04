@@ -6,7 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.page.scss'],
 })
 export class ExperiencePage implements OnInit {
-
+  title:string = ""
+  company:string = ""
+  period:string = ""
+  details:string = ""
+  country:string = ""
   constructor() { }
 
   ngOnInit() {

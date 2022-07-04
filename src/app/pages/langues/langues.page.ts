@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./langues.page.scss'],
 })
 export class LanguesPage implements OnInit {
-
+  name:string = ""
+  level:string = ""
   constructor() { }
 
   ngOnInit() {

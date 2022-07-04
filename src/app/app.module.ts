@@ -12,6 +12,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { environment } from 'src/environments/environment';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { FirebaseAuthService } from './services/auth.service';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -20,9 +23,13 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
     ReactiveFormsModule,
     FormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-    provideFirestore(() => getFirestore())
+    provideFirestore(() => getFirestore()),
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAuthModule,
   ],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+    FirebaseAuthService,
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -3,9 +3,9 @@
   
   <ion-content class="ion-padding">
     <div class="title">
-      <h1 class="ion-padding">SignUp</h1>
+      <h1 class="ion-padding">SignUp 😃😃</h1>
     </div>
-
+    <ion-text color="danger" class="invalide">{{error}}</ion-text>
     <ion-item class="ion-margin-bottom">
       <ion-label position="floating">Enter your e-mail address</ion-label>
       <ion-input  type="email" autocorrect="true" autofocus="true"></ion-input>
@@ -16,7 +16,7 @@
       <ion-input type="password"></ion-input>
     </ion-item>
 
-    <ion-button expand="block">Connexion</ion-button>
+    <ion-button expand="block" (click)="signin()">Connexion</ion-button>
     <div class="title">
         <p>-- OR --</p>
     </div>
@@ -27,12 +27,6 @@
       <ion-icon ios="trash-outline"></ion-icon>
         Sign in with Google
     </ion-button> -->
-
-    <ion-list>
-      <ion-item *ngFor="let user of users | async">
-        <ion-label>{{user.name }} {{ user.email }}</ion-label>
-      </ion-item>
-    </ion-list>
 
   </ion-content>
 </ion-app>

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompetencePage implements OnInit {
 
+  name:string = ""
+  level:string = ""
+  category:string = ""
+  begin:string = ""
+  end:string = ""
   constructor() { }
 
   ngOnInit() {

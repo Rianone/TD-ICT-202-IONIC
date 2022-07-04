@@ -6,7 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./informations.page.scss'],
 })
 export class InformationsPage implements OnInit {
-
+  names: string = ""
+  surnames: string = ""
+  date: string = ""
+  birth: string = ""
+  contact: string = ""
+  email: string = ""
+  compte: string = ""
   constructor() { }
 
   ngOnInit() {

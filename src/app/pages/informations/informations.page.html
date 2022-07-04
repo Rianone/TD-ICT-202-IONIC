@@ -23,11 +23,11 @@
     
         <ion-list slot="content">
           <ion-item>
-              Ex: Doe
+            Ex: Doe
           </ion-item>
           <ion-item>
             <ion-label position="floating">Enter new names here</ion-label>
-            <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+            <ion-input  type="text" autocorrect="true" [(ngModel)]="names"></ion-input>
           </ion-item>
             <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -44,7 +44,7 @@
         </ion-item>
         <ion-item>
           <ion-label position="floating">Enter new surnames here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="surnames"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -61,7 +61,7 @@
         </ion-item>
         <ion-item>
           <ion-label position="floating">Enter date here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="date"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -78,7 +78,7 @@
         </ion-item>
         <ion-item>
           <ion-label position="floating">Enter place here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="birth"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -96,7 +96,7 @@
           </ion-item>
         <ion-item>
           <ion-label position="floating">Add contact here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="contact"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -114,7 +114,7 @@
           </ion-item>
         <ion-item>
           <ion-label position="floating">Add email here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="email"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>
@@ -132,7 +132,7 @@
           </ion-item>
         <ion-item>
           <ion-label position="floating">Enter account url here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+          <ion-input  type="text" autocorrect="true" [(ngModel)]="compte"></ion-input>
         </ion-item>
           <ion-button expand="block">Save</ion-button>
         </ion-list>

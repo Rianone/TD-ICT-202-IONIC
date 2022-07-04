@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'informations',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -45,6 +45,15 @@ const routes: Routes = [
     path: 'imprimer',
     loadChildren: () => import('./pages/imprimer/imprimer.module').then( m => m.ImprimerPageModule)
   },
+  {
+    path: 'realisation',
+    loadChildren: () => import('./pages/realisation/realisation.module').then( m => m.RealisationPageModule)
+  },
+  {
+    path: 'certification',
+    loadChildren: () => import('./pages/certification/certification.module').then( m => m.CertificationPageModule)
+  },
+  
   
 ];
 

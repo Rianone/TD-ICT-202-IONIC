@@ -5,46 +5,51 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
   providedIn: 'root'
 })
 
-export class AuthService {
+export class FirebaseAuthService {
+  auth:any;
+  username:string ;
 
-  constructor(
-    private angularFireAuth: AngularFireAuth
-  ) { }  
-
-  createUser(value) {
-    return new Promise<any>((resolve, reject) => {
-      this.angularFireAuth.createUserWithEmailAndPassword(value.email, value.password)
-        .then(
-          res => resolve(res),
-          err => reject(err))
-    })
+  constructor(public angularFire: AngularFireAuth) {
+    this.auth = angularFire;
+  }
+  
+  signInWithEmail(email: string, password: string): any {
+    return this.angularFire.signInWithEmailAndPassword(email, password);
+  }
+  
+  signUpWithEmail(email: string, password: string): any {
+    return this.angularFire.createUserWithEmailAndPassword(email, password);
   }
 
-  signinUser(value) {
-    return new Promise<any>((resolve, reject) => {
-      this.angularFireAuth.signInWithEmailAndPassword(value.email, value.password)
-        .then(
-          res => resolve(res),
-          err => reject(err))
-    })
+  setUsername(username:string){
+     this.username = username;
   }
 
-  signoutUser() {
-    return new Promise<void>((resolve, reject) => {
-      if (this.angularFireAuth.currentUser) {
-        this.angularFireAuth.signOut()
-          .then(() => {
-            console.log("Sign out");
-            resolve();
-          }).catch(() => {
-            reject();
-          });
-      }
-    })
-  }
+  getUsername(){
+    return this.username;
+ }
+  
+  // signInWithGoogle() {
+  //   const provider = new auth.GoogleAuthProvider();
+  //   const scopes = ['profile', 'email'];
+  //   return this.socialSignIn(provider.providerId, scopes);
+  // }
 
-  userDetails() {
-    return this.angularFireAuth.user
-  }
-
+  // socialSignIn(providerName: string, scopes?: Array<string>): Promise<any> {
+  //   const provider = new auth.OAuthProvider(providerName);
+  
+  //   // add any permission scope you need
+  //   if (scopes) {
+  //     scopes.forEach(scope => {
+  //       provider.addScope(scope);
+  //     });
+  //   }
+  
+  //   if (this.platform.is('desktop')) {
+  //     return this.angularFire.signInWithPopup(provider);
+  //   } else {
+  //     // web but not desktop, for example mobile PWA
+  //     return this.angularFire.signInWithRedirect(provider);
+  //   }
+  // }
 }

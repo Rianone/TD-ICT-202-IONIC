@@ -13,12 +13,12 @@
   </div>
   <ion-list>
     <ion-item>
-      <ion-label>Title</ion-label>
+      <ion-label>Title(Post)</ion-label>
       <ion-label>Company</ion-label>
       <ion-label>Period</ion-label>
-      <ion-label>
-        <ion-item>Details</ion-item>
-      </ion-label>
+      <ion-label>Details</ion-label>
+      <ion-label>Country</ion-label>
+     
       <ion-button color="danger">&Cross;</ion-button>
     </ion-item>
   </ion-list>
@@ -32,19 +32,23 @@
     <ion-list slot="content">
       <ion-item>
         <ion-label position="floating">Enter Title here</ion-label>
-        <ion-input  type="text" autocorrect="true" autofocus="true"></ion-input>
+        <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="title"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Enter Company here</ion-label>
-        <ion-input  type="text" autocorrect="true" ></ion-input>
+        <ion-input  type="text" autocorrect="true" [(ngModel)]="company"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Enter Period here</ion-label>
-        <ion-input  type="text" autocorrect="true" ></ion-input>
+        <ion-input  type="text" autocorrect="true" [(ngModel)]="period"></ion-input>
       </ion-item>
       <ion-item>
         <ion-label position="floating">Enter Details here</ion-label>
-        <ion-input  type="text" autocorrect="true" ></ion-input>
+        <ion-input  type="text" autocorrect="true" [(ngModel)]="details"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Enter Country here</ion-label>
+        <ion-input  type="text" autocorrect="true" [(ngModel)]="country"></ion-input>
       </ion-item>
       <ion-button expand="block">Add</ion-button>
     </ion-list>

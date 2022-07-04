@@ -9,13 +9,12 @@
 
 <ion-content>
   <div class="title">
-    <h1 class="ion-padding">Education</h1>
+    <h1 class="ion-padding">Certifications</h1>
   </div>
   <ion-list>
     <ion-item>
-      <ion-label>Diplome</ion-label>
-      <ion-label>School</ion-label>
-      <ion-label>Period</ion-label>
+      <ion-label>Title</ion-label>
+      <ion-label>Organisation</ion-label>
       <ion-label>Category</ion-label>
       <ion-button color="danger">&Cross;</ion-button>
     </ion-item>
@@ -24,25 +23,24 @@
   <ion-accordion-group>
     <ion-accordion value="names" toggle-icon="arrow-down-circle">
       <ion-item slot="header">
-        <ion-label>Add Education</ion-label>
+        <ion-label>Add Certification</ion-label>
       </ion-item>
   
       <ion-list slot="content">
         <ion-item>
-          <ion-label position="floating">Enter Diplome name here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="diplome"></ion-input>
+          <ion-label position="floating">Enter title here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="title"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating">Enter School name here</ion-label>
-          <ion-input  type="text" autocorrect="true" [(ngModel)]="school"></ion-input>
+          <ion-label position="floating">Enter organisation here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="organisation"></ion-input>
         </ion-item>
         <ion-item>
-          <ion-label position="floating">Enter Period here</ion-label>
-          <ion-input  type="text" autocorrect="true" [(ngModel)]="period"></ion-input>
+          <ion-label position="floating">Choose category here</ion-label>
+          <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="category"></ion-input>
         </ion-item>
         <ion-button expand="block">Add</ion-button>
       </ion-list>
     </ion-accordion>
   </ion-accordion-group>
- 
 </ion-content>
