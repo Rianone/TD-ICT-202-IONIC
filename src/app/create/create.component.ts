@@ -3,6 +3,7 @@ import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {Router} from '@angular/router'
 import { AlertController } from '@ionic/angular';
 import { FirebaseAuthService } from '../services/auth.service';
+import { FirebaseService } from '../services/firebase.service';
 
 @Component({
   selector: 'app-create',
@@ -11,15 +12,18 @@ import { FirebaseAuthService } from '../services/auth.service';
 })
 export class CreateComponent implements OnInit {
   router: any;
-  email:string | null = "smrianone95@gmail.com";
+  email:string | null = "smrianone2@gmail.com";
   password:string | null='123456';
   error:string = '';
+  nameMatch:string[] =[]
+  name:string = ''
   
 
   constructor( 
     private route : Router, 
     public angularFire: AngularFireAuth,
     private authService: FirebaseAuthService,
+    private firebaseService: FirebaseService,
     private alertController: AlertController) {
 
           this.router = route
@@ -47,8 +51,10 @@ export class CreateComponent implements OnInit {
              this.authService.signUpWithEmail(this.email, this.password)
              .then(user => {
                // navigate to user profile
+               this.setUserInfo()
                this.presentAlert()
                this.redirectToprofile()
+               
              })
              .catch(error => {
                this.error = error.message;
@@ -68,8 +74,22 @@ export class CreateComponent implements OnInit {
   }
 
   redirectToprofile(){
-    console.log("clicked")
     this.router.navigate(["login"])
+  }
+  setUserInfo(){
+    this.nameMatch = this.email.match(/^([^@]*)@/);
+    this.name = this.nameMatch ? this.nameMatch[1] : null;
+    this.firebaseService.create_record({
+      email:this.email,
+      password:this.password,
+      nom:this.name,
+      photo:'none',
+      contact:'none',
+      theme:'default',
+    }, 'users').
+    catch(error => {
+        console.log(error);
+   });
   }
 
 }

@@ -15,6 +15,8 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { FirebaseAuthService } from './services/auth.service';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { FirebaseService } from './services/firebase.service';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent],
@@ -26,9 +28,11 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
     provideFirestore(() => getFirestore()),
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     FirebaseAuthService,
+    FirebaseService
   ],
   bootstrap: [AppComponent],
 })

@@ -47,7 +47,8 @@ export interface IExperience{
 export interface ILangage{
 	id?:string,
 	nom:string,
-	niveau:number
+	niveau:number,
+	userid:string;
 }
 
 export interface ILoisir{
@@ -75,11 +76,9 @@ export interface IUser{
 	email:string,
 	password:string,
 	nom?:string,
-	prenom?:string,
-	dateNaissance?:Date,
-	site?:string,
 	photo?:string,
-	biographie?:string;
+	contact?:string;
+	theme:string;
 }
 
 

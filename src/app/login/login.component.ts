@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   email:string | null = "smrianone@gmail.com";
   password:string | null='123456';
   error:string = '';
-  username:string[] = this.email.match(/(rianone)@gmail.com/);
+  username:string = ''
   
   constructor(
     private route : Router, 
@@ -34,7 +34,7 @@ export class LoginComponent implements OnInit {
 
   async presentAlert() {
     const alert = await this.alertController.create({ 
-      header: 'Welcome 🥳!!!',
+      // header: 'Welcome '+this.username[1]+' 🥳!!!',
       buttons: ['OK']
     });
 
@@ -52,11 +52,11 @@ export class LoginComponent implements OnInit {
           this.error = ''
           
           this.authService.signInWithEmail(this.email, this.password)
-          .then(user => {
+          .then(() => {
             // navigate to user profile
             this.presentAlert()
             this.redirectToprofile();
-            this.authService.setUsername(this.username[1])
+            // this.authService.setUsername(this.username[1])
           })
           .catch(error => {
             this.error = error.message;
@@ -77,7 +77,6 @@ export class LoginComponent implements OnInit {
   }
 
   redirectToprofile(){
-    console.log("clicked")
     this.router.navigate(["informations"])
   }
 

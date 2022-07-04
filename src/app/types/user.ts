@@ -4,5 +4,6 @@ export class User{
     email:string;
     tel: string;
     password:string;
+    photoUrl: string;
 }
 
