@@ -51,7 +51,7 @@ export class CreateComponent implements OnInit {
              this.authService.signUpWithEmail(this.email, this.password)
              .then(user => {
                // navigate to user profile
-               this.setUserInfo()
+               
                this.presentAlert()
                this.redirectToprofile()
                

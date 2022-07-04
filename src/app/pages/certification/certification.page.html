@@ -11,14 +11,14 @@
   <div class="title">
     <h1 class="ion-padding">Certifications</h1>
   </div>
-  <ion-list>
+  <!-- <ion-list>
     <ion-item>
       <ion-label>Title</ion-label>
       <ion-label>Organisation</ion-label>
       <ion-label>Category</ion-label>
       <ion-button color="danger">&Cross;</ion-button>
     </ion-item>
-  </ion-list>
+  </ion-list> -->
 
   <ion-accordion-group>
     <ion-accordion value="names" toggle-icon="arrow-down-circle">
@@ -35,12 +35,39 @@
           <ion-label position="floating">Enter organisation here</ion-label>
           <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="organisation"></ion-input>
         </ion-item>
-        <ion-item>
-          <ion-label position="floating">Choose category here</ion-label>
-          <ion-input  type="text" autocorrect="true" autofocus="true" [(ngModel)]="category"></ion-input>
-        </ion-item>
+        <ion-radio-group value="grape">
+          <ion-list-header>
+            <ion-label>Fruit</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label>Apple</ion-label>
+            <ion-radio slot="start" color="success" value="apple"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Grape</ion-label>
+            <ion-radio slot="start" color="tertiary" value="grape"></ion-radio>
+          </ion-item>
+
+          <ion-item>
+            <ion-label>Cherry</ion-label>
+            <ion-radio slot="start" color="secondary" value="cherry"></ion-radio>
+          </ion-item>
+        </ion-radio-group>
         <ion-button expand="block">Add</ion-button>
       </ion-list>
     </ion-accordion>
   </ion-accordion-group>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Destination</ion-card-subtitle>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the
+      Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
 </ion-content>

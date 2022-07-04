@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FirebaseService } from 'src/app/services/firebase.service';
 import { ILangage } from 'src/app/types/model';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-langues',
@@ -15,6 +16,7 @@ export class LanguesPage implements OnInit {
   constructor(private firebaseService: FirebaseService,) { }
 
   ngOnInit() {
+    console.log(environment.globalUid)
     this.firebaseService.read_records('langage').subscribe(data => {
 
       this.languageList = data.map(e => {

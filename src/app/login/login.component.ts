@@ -6,6 +6,7 @@ import { Observable } from 'rxjs';
 import { FirebaseAuthService } from '../services/auth.service';
 import { UserService } from '../services/user-service.service';
 import { User } from '../types/user';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -35,6 +36,7 @@ export class LoginComponent implements OnInit {
   async presentAlert() {
     const alert = await this.alertController.create({ 
       // header: 'Welcome '+this.username[1]+' 🥳!!!',
+      header: 'Welcome 🥳!!!',
       buttons: ['OK']
     });
 
@@ -54,9 +56,10 @@ export class LoginComponent implements OnInit {
           this.authService.signInWithEmail(this.email, this.password)
           .then(() => {
             // navigate to user profile
+            this.setGlobalUid()
             this.presentAlert()
             this.redirectToprofile();
-            // this.authService.setUsername(this.username[1])
+            // this.username=''
           })
           .catch(error => {
             this.error = error.message;
@@ -78,6 +81,10 @@ export class LoginComponent implements OnInit {
 
   redirectToprofile(){
     this.router.navigate(["informations"])
+  }
+
+  setGlobalUid(){
+      environment.globalUid = '1234'
   }
 
 }
